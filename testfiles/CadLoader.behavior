@@ -1,0 +1,6 @@
+behavior CadLoader {
+    public void FazerCoco() { }
+    
+
+    exnpublic int x;
+}

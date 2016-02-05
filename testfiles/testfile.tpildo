@@ -1,0 +1,20 @@
+public class X extends Model3DSnapper uses Joao {
+    /*public CadItem[] modelsToLoad(); {} */
+    
+    //extend x
+}
+//uuu
+
+public class Y extends SomethingElse  {
+    /*public CadItem[] modelsToLoad(); {} */
+    
+    //extend x
+}
+//uuu
+
+
+public class Z uses Money, Ice, Torresmo  {
+    /*public CadItem[] modelsToLoad(); {} */
+    
+    //extend x
+}

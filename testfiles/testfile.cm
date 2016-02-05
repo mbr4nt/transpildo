@@ -1,0 +1,22 @@
+public class X extends Behavior_Joao_extends_Model3DSnapper
+    /*public CadItem[] modelsToLoad();    */
+    
+    //extend x
+}
+//uuu
+
+public class Y extends SomethingElse  {
+    /*public CadItem[] modelsToLoad();    */
+    
+    //extend x
+}
+//uuu
+
+
+public class Z extends Behavior_Money_Ice_Torresmo_extends_Object
+    /*public CadItem[] modelsToLoad();    */
+    
+    //extend x
+}
+public class Behavior_Joao_extends_Model3DSnapper extends Model3DSnapper { }
+public class Behavior_Money_Ice_Torresmo_extends_Object extends Object { }
