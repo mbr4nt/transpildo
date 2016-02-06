@@ -1,0 +1,56 @@
+package custom.hni;
+
+behavior CadLoaderBehavior {
+    /**
+     * Cad 3D Loader
+     **/
+    public HniSymbolLoader sl;
+   
+    /***********************************************************************
+    * 2D
+    ***********************************************************************/
+
+    /**
+    * Get 2D.
+    */
+    public void build2D() {
+        GInstance gi = sl.get2D();        
+        graph = gi.any() ? gi : null;
+    }
+
+
+    /***********************************************************************
+     * 3D
+     ***********************************************************************/
+
+    /**
+     * Get 3D.
+     */
+    public Primitive3D get3D(FetchEnv3D env) {      
+        Primitive3D obj3D = sl.get3D(env, true);
+        Instance3D inst(obj3D);
+        return inst;
+    }
+    
+    
+    /**
+     * Local bound.
+     */
+    public box localBound() {
+        return sl.localBound(true);
+    }
+    
+    /**
+    * update the HniSymbolLoader instance.
+    **/
+    extend public void updateSymbol(double newWidth=0) {
+        if(newWidth == 0)
+            newWidth = width;
+        
+        CadSymbolTransformItem[] items();
+        
+        items << CadSymbolTransformItem("3U7H15D30SL");
+        
+        sl = HniSymbolLoader(items);
+    }
+}

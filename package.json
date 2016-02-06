@@ -19,6 +19,7 @@
     "async": "^1.5.2",
     "cm_modules": "git+https://allsteelnpm:batata123@bitbucket.org/asiebiz/cm_modules.git",
     "glob": "^6.0.4",
-    "interpolate": "^0.1.0"
+    "interpolate": "^0.1.0",
+    "underscore": "^1.8.3"
   }
 }
